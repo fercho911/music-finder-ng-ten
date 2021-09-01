@@ -1,4 +1,5 @@
-import { MusicFinderComponent } from './components/music-finder/music-finder.component'import { BrowserModule } from '@angular/platform-browser';
+import { MusicFinderComponent } from './components/music-finder/music-finder.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
