@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MusicFinderService} from '../../service/music-finder.service'
+
 
 @Component({
   selector: 'app-music-finder',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicFinderComponent implements OnInit {
 
-  constructor() { }
+  showWelcomeMessage :boolean = false;
+
+
+  constructor(private musicService: MusicFinderService) {
+
+  }
+
+  authorize(): void {
+     this.musicService.autorize();
+  }
+  
 
   ngOnInit(): void {
+
+    
+
+
   }
 
 }
