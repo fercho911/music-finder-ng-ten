@@ -8,11 +8,16 @@ import {MusicFinderService} from '../../service/music-finder.service'
   styleUrls: ['./music-finder.component.css']
 })
 export class MusicFinderComponent implements OnInit {
+   
+  showWelcomeMessage :boolean = true;
+  
+  
+  constructor(private musicService: MusicFinderService){ 
 
-  showWelcomeMessage :boolean = false;
-
-
-  constructor(private musicService: MusicFinderService) {
+      if(this.musicService.isThereAuthCode()){
+        this.showWelcomeMessage = false;
+        console.log("here constructor");
+      }
 
   }
 

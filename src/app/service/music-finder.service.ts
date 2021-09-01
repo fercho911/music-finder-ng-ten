@@ -61,6 +61,19 @@ export class MusicFinderService {
     return code;
   }
 
+  isThereAuthCode(){
+    let code = localStorage.getItem('code');
+    if (code == null || code == '' || code == undefined){
+      if (this.getCode() == null) {
+          return false;
+      }
+    }
+    return true;
+  }
+
+  
+
+
 
 
 }

@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 
-<div   class="body">
+<div *ngIf="showWelcomeMessage"  class="body">
   <h1>Music finder</h1>
   <h3 class="ancho">  
     Welcome to the music finder, if it's your first time here or your authorization expired, 
@@ -12,3 +12,5 @@
     Primary 
   </button>
 </div>
+
+
