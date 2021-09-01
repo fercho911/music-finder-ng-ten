@@ -9,18 +9,28 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //material 
 import {NavbarComponent} from './components/navbar/navbar.component';
 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     MusicFinderComponent,
-    
+    NavbarComponent,    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    //material
-    NavbarComponent
+     //material
+     MatToolbarModule,
     
 
 
