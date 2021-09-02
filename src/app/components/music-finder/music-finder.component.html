@@ -14,3 +14,24 @@
 </div>
 
 
+
+
+
+<div  class="body">
+  <div class="login">
+    <mat-form-field class="ancho" appearance="fill">
+      <mat-label>artist name</mat-label>
+      <input matInput  list="datalistOptions" (keyup)="findArtistByname($event)"
+      (change)="searchArtist($event)" />
+      <datalist id="datalistOptions" >
+        <option>searching</option>
+        <option *ngFor ="let item of artist " [value]="item.name" >{{item.name}}</option>
+    </datalist> 
+    </mat-form-field>
+    <br />
+    <button class="ancho" mat-raised-button mat-button color="primary">
+      Primary 
+    </button>
+  </div>
+</div>
+

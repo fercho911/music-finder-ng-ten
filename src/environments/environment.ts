@@ -10,7 +10,8 @@ export const environment = {
     CLIENT_SECRET:"836e9fba2e5d4d7a876593ca5caa6a1a",
     CALL_BACK_URL:"http://localhost:4200/music-finder",
     ACTIONS : { 
-        SEARCH_ARTIST: "search?type=artist&market=US&limit=10&offset=5&q="
+        SEARCH_ARTIST: "search?type=artist&market=US&limit=10&offset=5&q=",
+        GET_TRACKS:"tracks?ids="
       },
       AUTORIZE_BASE_URL: "https://accounts.spotify.com/",
       AUTORIZE_ACTIONS : { 
